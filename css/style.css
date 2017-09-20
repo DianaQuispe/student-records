@@ -1,0 +1,7 @@
+* {
+    background-color: ghostwhite;
+}
+.students * {
+    background-color: #788EBD;
+    color: white;
+}
