@@ -1,7 +1,11 @@
 * {
     background-color: ghostwhite;
 }
-.students * {
+.addStudents * {
     background-color: #788EBD;
+    color: white;
+}
+.printStudents * {
+    background-color: #42CF59;
     color: white;
 }

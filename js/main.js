@@ -9,34 +9,34 @@
 var students = [];
 
 $('#add').click(function() {
-    var name = prompt('Student Name:', 'Name');
-    var techPoints = prompt('Tech Points:');
-    var lifePoints = prompt('Life Points');
-    
+  
     students.push({
-        'name' : name,
-        'techPoints' : techPoints,
-        'lifePoints' : lifePoints,
-        'status' : 'active',
+        name : prompt('Student Name:', 'Name'),
+        techPoints : prompt('Tech Points:',' 70%'),
+        lifePoints : prompt('Life Points:','70%'),
+        status : 'active',
     })
     console.log(students);
+    $('#student').html('');
+    $('#student').append(`<div class="addStudents"><h1><b>STUDENT:</b></h1><br><p><b>Name:</b>${students[students.length-1].name }</p><p><b>Tech Points</b>:${students[students.length-1].techPoints }</p><p><b>Life Points:</b>${students[students.length-1].lifePoints }</p><p><b>Status:</b>${students[students.length-1].status }</p></div>`)
+
 })
+
 $('#print').click(function(){
-    var arrayo = students.map(function(x){
-        return x;
-    })
-    $('#student').append(`<div class="students"><h1><b>STUDENT:</b></h1><br><p><b>Name:</b>${students[0].name }</p><p><b>Tech Points</b>:${students[0].techPoints }</p><p><b>Life Points:</b>${students[0].lifePoints }</p><p><b>Status:</b>${students[0].status }</p></div>`)
-    
+    myFunction();
+    function printAll(item) {
+        return `<div class="printStudents"><h1><b>STUDENT:</b></h1><br><p><b>Name:</b>${index.name }</p><p><b>Tech Points</b>:${item.techPoints }</p><p><b>Life Points:</b>${item.lifePoints }</p><p><b>Status:</b>${item.status }</p></div>`;
+    }
+    function myFunction() {
+        $('#student').html('');
+        $('#student').append(students.map(printAll));
+        
+    }
 })
-// var person = new Person(names, techPoints, lifePoints, status);
-// console.log(person);
 
-
-
-// var click = document.getElementById('add');
-
-//  click.addEventListener('click', add());
-//  function add() {
+ $('#update').click(function() {
+    function checkNotes(item) {
+        return 
+    }
     
-
-// $('#student')
+}) 
