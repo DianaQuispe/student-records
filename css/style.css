@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+
 * {
+    font-family: 'Alegreya Sans', sans-serif;    
     background-color: ghostwhite;
 }
-.addStudents * {
-    background-color: #788EBD;
-    color: white;
+h1 {
+    font-size: 2.6em !important;
+    text-shadow: 2px 2px 4px #000000;
 }
-.printStudents * {
-    background-color: #42CF59;
+button{
+    font-size: 1.4em !important;
+}
+#student  {
+    font-size: 1.3em;
     color: white;
+    text-transform: capitalize;
+}
+.addStudents *, .addStudents {
+    background-color: #788EBD;
+}
+.printStudents *, .printStudents {
+    background-color: #329741;
+   
+}
+.checkStudents *, .checkStudents {
+    background-color: #EB7648;
 }
